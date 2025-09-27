@@ -2,7 +2,7 @@
 
 import type React from "react";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, ReactNode } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -18,7 +18,7 @@ interface Story {
   id: number;
   title: string;
   image: string;
-  content: string;
+  content: string | ReactNode;
   icon: React.ReactNode;
 }
 
@@ -26,7 +26,7 @@ const stories: Story[] = [
   {
     id: 1,
     title: "How We Met",
-    image: "/romantic-engagement-photo-of-couple-in-elegant-set.jpg",
+    image: "/pictures/02.jpeg",
     content: `Every great story has a beginning, and ours started in church — at the Baptist Students’ Fellowship (BSF). We attended regularly from different churches: Blessing, a proud member of Salem Baptist Church Agiliti, and Iyanuoluwa from First Baptist Church Alapere — both under Gideon 1 Baptist Association.
 From our very first conversations, there was a spark — sometimes subtle, sometimes undeniable. Whether it was a funny/awkward moment or the quiet way we connected over shared values, we knew something special was unfolding.
 What began as simple friendship and casual conversations soon grew into a bond neither of us could ignore.`,
@@ -35,14 +35,40 @@ What began as simple friendship and casual conversations soon grew into a bond n
   {
     id: 2,
     title: "The Journey",
-    image: "/beautiful-pre-wedding-photo-with-blue-and-gold-the.jpg",
-    content: "TODO",
+    image: "/pictures/03.jpeg",
+    content: (
+      <div>
+        <p>
+          Love has a way of growing in the little moments. From countless calls,
+          to dates, and road trips, we discovered the joy of each other’s
+          company.
+        </p>
+        <p className="mt-3">Our relationship has been built on:</p>
+        <ul className="list-disc">
+          <li>Prayers 🙏🏽</li>
+          <li>Laughter 😂</li>
+          <li>Support 💪🏽</li>
+          <li>Faith & Shared Dreams 🌟</li>
+        </ul>
+        <p className="mt-3">
+          Together, we’ve celebrated milestones — graduations, career moves,
+          birthdays, travels, and more. But beyond the big moments, it has been
+          the everyday ones that defined us: the late-night conversations, the
+          quiet prayers, and the comfort of knowing we always have each other.
+        </p>
+        <p className="mt-3">
+          What makes our bond truly special is the way we bring out the best in
+          one another. We are teammates, best friends, and now — soon to be —
+          partners for life.
+        </p>
+      </div>
+    ),
     icon: <Calendar className="h-6 w-6" />,
   },
   {
     id: 3,
     title: "The Proposal",
-    image: "/romantic-couple-portrait-with-blue-roses-and-elega.jpg",
+    image: "/pictures/04.jpeg",
     content: `On Blessing’s birthday, in her parent’s house and right in front of her mother, Iyanuoluwa decided it was time to make the forever promise. With the help of Blessing’s younger sibling Mary, and two dear friends Johnson and Michael, it was all set up perfectly.
 That morning, filled with joy, laughter, and emotion, he got down on one knee and asked the question that would change everything:
 “Will you marry me?”
@@ -53,7 +79,7 @@ Blessing’s answer came with a radiant smile, happy tears, and a resounding “
   {
     id: 4,
     title: "Looking Ahead",
-    image: "/couple-portrait-in-elegant-formal-wear.jpg",
+    image: "/pictures/couple-portrait-in-elegant-formal-wear.jpg",
     content: `Now, we stand on the threshold of a new chapter — marriage. With grateful hearts, we are excited to build a home filled with love, laughter, and purpose.
 We are endlessly thankful for our families and friends who have walked alongside us — for the prayers, encouragement, and love that surround us. Our wedding is not just about the two of us, but about the beautiful community of love that has shaped us.
 Here’s to forever — hand in hand, heart to heart. 💕
@@ -90,15 +116,15 @@ export function InteractiveStories() {
   }, [currentStory]);
 
   // Auto-advance stories every 8 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (!isAnimating) {
-        nextStory();
-      }
-    }, 8000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (!isAnimating) {
+  //       nextStory();
+  //     }
+  //   }, 8000);
 
-    return () => clearInterval(interval);
-  }, [isAnimating]);
+  //   return () => clearInterval(interval);
+  // }, [isAnimating]);
 
   const story = stories[currentStory];
 
@@ -132,7 +158,7 @@ export function InteractiveStories() {
               <img
                 src={story.image || "/placeholder.svg"}
                 alt={story.title}
-                className={`w-full h-full object-cover transition-all duration-500 ${
+                className={`w-full h-full object-cover object-top transition-all duration-500 ${
                   isAnimating ? "scale-110 opacity-0" : "scale-100 opacity-100"
                 }`}
               />

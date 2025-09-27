@@ -97,11 +97,11 @@ export function WeddingGallery() {
             className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300 group"
             onClick={() => setSelectedImage(image.src)}
           >
-            <div className="aspect-[4/3] overflow-hidden">
+            <div className="aspect-[2/3] overflow-hidden">
               <img
                 src={image.src || "/placeholder.svg"}
                 alt={image.alt}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </Card>
@@ -123,7 +123,7 @@ export function WeddingGallery() {
             <img
               src={selectedImage || "/placeholder.svg"}
               alt="Gallery image"
-              className="max-w-full max-h-full object-contain"
+              className="max-w-full max-h-full object-cover object-top"
             />
           </div>
         </div>
