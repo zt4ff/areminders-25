@@ -17,7 +17,6 @@ import {
 interface Story {
   id: number;
   title: string;
-  date: string;
   image: string;
   content: string;
   icon: React.ReactNode;
@@ -27,7 +26,6 @@ const stories: Story[] = [
   {
     id: 1,
     title: "How We Met",
-    date: "March 2022",
     image: "/romantic-engagement-photo-of-couple-in-elegant-set.jpg",
     content: `Every great story has a beginning, and ours started in church — at the Baptist Students’ Fellowship (BSF). We attended regularly from different churches: Blessing, a proud member of Salem Baptist Church Agiliti, and Iyanuoluwa from First Baptist Church Alapere — both under Gideon 1 Baptist Association.
 From our very first conversations, there was a spark — sometimes subtle, sometimes undeniable. Whether it was a funny/awkward moment or the quiet way we connected over shared values, we knew something special was unfolding.
@@ -37,7 +35,6 @@ What began as simple friendship and casual conversations soon grew into a bond n
   {
     id: 2,
     title: "The Journey",
-    date: "April 2022",
     image: "/beautiful-pre-wedding-photo-with-blue-and-gold-the.jpg",
     content: "TODO",
     icon: <Calendar className="h-6 w-6" />,
@@ -45,7 +42,6 @@ What began as simple friendship and casual conversations soon grew into a bond n
   {
     id: 3,
     title: "The Proposal",
-    date: "December 2024",
     image: "/romantic-couple-portrait-with-blue-roses-and-elega.jpg",
     content: `On Blessing’s birthday, in her parent’s house and right in front of her mother, Iyanuoluwa decided it was time to make the forever promise. With the help of Blessing’s younger sibling Mary, and two dear friends Johnson and Michael, it was all set up perfectly.
 That morning, filled with joy, laughter, and emotion, he got down on one knee and asked the question that would change everything:
@@ -57,7 +53,6 @@ Blessing’s answer came with a radiant smile, happy tears, and a resounding “
   {
     id: 4,
     title: "Looking Ahead",
-    date: "2022 - 2024",
     image: "/couple-portrait-in-elegant-formal-wear.jpg",
     content: `Now, we stand on the threshold of a new chapter — marriage. With grateful hearts, we are excited to build a home filled with love, laughter, and purpose.
 We are endlessly thankful for our families and friends who have walked alongside us — for the prayers, encouragement, and love that surround us. Our wedding is not just about the two of us, but about the beautiful community of love that has shaped us.
@@ -110,10 +105,9 @@ export function InteractiveStories() {
   return (
     <div className="max-w-6xl mx-auto">
       <h2 className="text-3xl md:text-4xl font-serif text-primary text-center mb-12">
-        Our Journey
+        Our Love Store
       </h2>
 
-      {/* Story Navigation Dots */}
       <div className="flex justify-center gap-3 mb-8">
         {stories.map((_, index) => (
           <button
@@ -163,9 +157,6 @@ export function InteractiveStories() {
                   <h3 className="text-2xl lg:text-3xl font-serif text-primary">
                     {story.title}
                   </h3>
-                  <span className="text-sm text-muted-foreground bg-muted px-3 py-1 rounded-full">
-                    {story.date}
-                  </span>
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed text-lg mb-6">
@@ -243,9 +234,6 @@ export function InteractiveStories() {
                 >
                   {timelineStory.title}
                 </h4>
-                <p className="text-xs text-muted-foreground">
-                  {timelineStory.date}
-                </p>
               </div>
             ))}
           </div>

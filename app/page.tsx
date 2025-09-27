@@ -85,7 +85,7 @@ export default function WeddingWebsite() {
                 <p className="text-muted-foreground leading-relaxed">
                   Every love story deserves a name — something that carries the
                   essence of two hearts becoming one. For us, that name is{" "}
-                  <span className="font-bold">AREMINDERS ‘25</span>.
+                  <span className="font-bold text-black">AREMINDERS ‘25</span>.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   The name was birthed from a mix of laughter, friendship, and
@@ -115,14 +115,14 @@ export default function WeddingWebsite() {
                   Now, as we come together in the year 2025, we combined these
                   two pieces —{" "}
                   <span className="font-bold text-black">ARE MINE</span> and{" "}
-                  <span className="font-bold">WONDERS</span> — to create
-                  something uniquely ours:
+                  <span className="font-bold text-black">WONDERS</span> — to
+                  create something uniquely ours:
                 </p>
               </Card>
             </div>
             <div className="relative">
               <img
-                src="/romantic-couple-portrait-with-blue-roses-and-elega.jpg"
+                src="/pictures/01.jpeg"
                 alt="Blessing and Iyanuoluwa"
                 className="w-full rounded-lg shadow-lg"
               />
