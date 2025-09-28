@@ -30,8 +30,10 @@ export default function RootLayout({
       <body
         className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${playfair.variable}`}
       >
-        <Suspense fallback={null}>{children}</Suspense>
-        <Analytics />
+        <Suspense fallback={null}>
+          {children}
+          <Analytics />
+        </Suspense>
       </body>
     </html>
   );
