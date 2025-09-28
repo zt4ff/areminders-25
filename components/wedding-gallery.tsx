@@ -94,7 +94,7 @@ export function WeddingGallery() {
         {filteredImages.map((image, index) => (
           <Card
             key={index}
-            className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300 group"
+            className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300 group p-0"
             onClick={() => setSelectedImage(image.src)}
           >
             <div className="aspect-[2/3] overflow-hidden">
@@ -110,7 +110,12 @@ export function WeddingGallery() {
 
       {/* Lightbox */}
       {selectedImage && (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4"
+          onClick={() => {
+            setSelectedImage(null);
+          }}
+        >
           <div className="relative max-w-4xl max-h-full">
             <Button
               variant="ghost"

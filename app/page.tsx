@@ -5,6 +5,7 @@ import { RSVPForm } from "@/components/rsvp-form";
 import { WeddingGallery } from "@/components/wedding-gallery";
 import { Heart, MapPin, Clock, Calendar, Quote } from "lucide-react";
 import { InteractiveStories } from "@/components/interactive-stories";
+import Link from "next/link";
 
 export default function WeddingWebsite() {
   return (
@@ -28,19 +29,23 @@ export default function WeddingWebsite() {
               {"Holy Solemnization in Holy Matrimony"}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground"
-              >
-                RSVP Now
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-primary text-primary hover:bg-primary/10 bg-transparent"
-              >
-                View Events
-              </Button>
+              <Link href="#love-notes">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer"
+                >
+                  Send Love Notes
+                </Button>
+              </Link>
+              <Link href="#events">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-primary text-primary hover:bg-primary/10 bg-transparent cursor-pointer"
+                >
+                  View Events
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -132,87 +137,143 @@ export default function WeddingWebsite() {
       </section>
 
       {/* Wedding Events Section */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4" id="events">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif text-primary text-center mb-12">
             Wedding Events
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Engagement */}
-            <Card className="p-6 text-center bg-secondary/20 border-secondary">
-              <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="h-8 w-8 text-secondary-foreground" />
-              </div>
-              <h3 className="text-xl font-serif text-primary mb-3">
-                Engagement
-              </h3>
-              <div className="space-y-2 text-sm text-muted-foreground">
-                <div className="flex items-center justify-center gap-2">
-                  <Clock className="h-4 w-4" />
-                  <span>7:00 AM</span>
+          <div className="space-y-8">
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Royal Transition Night */}
+              <Card className="p-6 text-center bg-primary/20 border-primary">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Calendar className="h-8 w-8 text-primary-foreground" />
                 </div>
-                <div className="flex items-start justify-center gap-2">
-                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                  <span className="text-center">
-                    Chris College Hall
-                    <br />7 Sholanke Close, Kosofe Mile 12
-                    <br />
-                    Ketu, Lagos
-                  </span>
+                <h3 className="text-xl font-serif text-primary mb-3">
+                  Royal Transition Night
+                </h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div className="flex items-center justify-center gap-2">
+                    <Clock className="h-4 w-4" />
+                    <span>Sun, 5th October, 2025 - 2:00 PM</span>
+                  </div>
+                  <div className="flex items-start justify-center gap-2">
+                    <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                    <span className="text-center">
+                      First Baptist Church Kosofe
+                      <br />
+                      12, Church Street, Alapere, Ketu
+                      <br />
+                      Lagos
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
 
-            {/* Church Ceremony */}
-            <Card className="p-6 text-center bg-primary/20 border-primary">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                <Calendar className="h-8 w-8 text-primary-foreground" />
-              </div>
-              <h3 className="text-xl font-serif text-primary mb-3">
-                Church Ceremony
-              </h3>
-              <div className="space-y-2 text-sm text-muted-foreground">
-                <div className="flex items-center justify-center gap-2">
-                  <Clock className="h-4 w-4" />
-                  <span>11:00 AM</span>
+              {/* Choir/Youth Testimony Night */}
+              <Card className="p-6 text-center bg-primary/20 border-primary">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Calendar className="h-8 w-8 text-primary-foreground" />
                 </div>
-                <div className="flex items-start justify-center gap-2">
-                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                  <span className="text-center">
-                    First Baptist Church Kosofe
-                    <br />
-                    592 Ikorodu Road
-                    <br />
-                    Lagos
-                  </span>
+                <h3 className="text-xl font-serif text-primary mb-3">
+                  Choir/Youth Testimony Night
+                </h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div className="flex items-center justify-center gap-2">
+                    <Clock className="h-4 w-4" />
+                    <span>Sat, 25th October, 2025 - 2:00 PM</span>
+                  </div>
+                  <div className="flex items-start justify-center gap-2">
+                    <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                    <span className="text-center">
+                      First Baptist Church Kosofe
+                      <br />
+                      12, Church Street, Alapere, Ketu
+                      <br />
+                      Lagos
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+            </div>
 
-            {/* Reception */}
-            <Card className="p-6 text-center bg-accent/20 border-accent">
-              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="h-8 w-8 text-accent-foreground" />
-              </div>
-              <h3 className="text-xl font-serif text-primary mb-3">
-                Reception
-              </h3>
-              <div className="space-y-2 text-sm text-muted-foreground">
-                <div className="flex items-center justify-center gap-2">
-                  <Clock className="h-4 w-4" />
-                  <span>After Ceremony</span>
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Engagement */}
+              <Card className="p-6 text-center bg-secondary/20 border-secondary">
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart className="h-8 w-8 text-secondary-foreground" />
                 </div>
-                <div className="flex items-start justify-center gap-2">
-                  <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                  <span className="text-center">
-                    Chris College Hall 7<br />
-                    Sholanke Close, Kosofe Mile 12
-                    <br />
-                    Ketu, Lagos
-                  </span>
+                <h3 className="text-xl font-serif text-primary mb-3">
+                  Traditional Engagement
+                </h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div className="flex items-center justify-center gap-2">
+                    <Clock className="h-4 w-4" />
+                    <span>Sat, 8th November, 2025 - 7:00 AM</span>
+                  </div>
+                  <div className="flex items-start justify-center gap-2">
+                    <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                    <span className="text-center">
+                      Chris College Hall
+                      <br />7 Sholanke Close, Kosofe Mile 12
+                      <br />
+                      Ketu, Lagos
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </Card>
+              </Card>
+
+              {/* Church Ceremony */}
+              <Card className="p-6 text-center bg-primary/20 border-primary">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Calendar className="h-8 w-8 text-primary-foreground" />
+                </div>
+                <h3 className="text-xl font-serif text-primary mb-3">
+                  Church Wedding
+                </h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div className="flex items-center justify-center gap-2">
+                    <Clock className="h-4 w-4" />
+                    <span>Sat, 8th October, 2025 - 11:00 AM</span>
+                  </div>
+                  <div className="flex items-start justify-center gap-2">
+                    <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                    <span className="text-center">
+                      First Baptist Church Kosofe
+                      <br />
+                      592 Ikorodu Road
+                      <br />
+                      Lagos
+                    </span>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Reception */}
+              <Card className="p-6 text-center bg-accent/20 border-accent">
+                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Heart className="h-8 w-8 text-accent-foreground" />
+                </div>
+                <h3 className="text-xl font-serif text-primary mb-3">
+                  Reception
+                </h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div className="flex items-center justify-center gap-2">
+                    <Clock className="h-4 w-4" />
+                    <span>Sat, 8th October, 2025 - 1:30 PM</span>
+                  </div>
+                  <div className="flex items-start justify-center gap-2">
+                    <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                    <span className="text-center">
+                      Chris College Hall 7<br />
+                      Sholanke Close, Kosofe Mile 12
+                      <br />
+                      Ketu, Lagos
+                    </span>
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -275,11 +336,11 @@ export default function WeddingWebsite() {
         </div>
       </section>
 
-      {/* RSVP Section */}
-      <section className="py-16 px-4">
+      {/* Love Notes Section */}
+      <section id="love-notes" className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif text-primary text-center mb-12">
-            Join Our Celebration
+            Send Love Notes To Us
           </h2>
           <RSVPForm />
         </div>

@@ -1,118 +1,99 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Phone, User } from "lucide-react"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+
+import { Phone, User } from "lucide-react";
 
 export function RSVPForm() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    attendance: "",
-    guests: "",
+    fullname: "",
     message: "",
-  })
+  });
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log("RSVP submitted:", formData)
-    alert("Thank you for your RSVP! We look forward to celebrating with you.")
-  }
+  const GOOGLE_SCRIPT_URL =
+    "https://script.google.com/macros/s/AKfycbzNaTAbVjfYlUp-eGaJKc69W7nJH-qWBuNkqsH3grgapt4fecO9so3XK1airZJ0xAVW/exec";
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          fullname: formData?.fullname,
+          message: formData?.message,
+          timestamp: new Date().toISOString(),
+        }),
+        mode: "no-cors",
+      });
+
+      alert("Message sent successfully! Thanks for your well wishes");
+      setFormData({
+        fullname: "",
+        message: "",
+      });
+      setIsLoading(false);
+    } catch (err) {
+      alert("Error sending report, please try again later");
+      setIsLoading(false);
+    }
+  };
 
   return (
     <div className="max-w-2xl mx-auto">
       <Card className="bg-card/80 backdrop-blur-sm">
         <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-serif text-primary">RSVP</CardTitle>
-          <p className="text-muted-foreground">Please let us know if you'll be joining us</p>
+          <CardTitle className="text-2xl font-serif text-primary">💌</CardTitle>
+          <p className="text-muted-foreground">
+            We look forward to hearing from you
+          </p>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="name">Full Name *</Label>
-                <Input
-                  id="name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                />
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="phone">Phone Number</Label>
-                <Input
-                  id="phone"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="attendance">Will you attend? *</Label>
-                <Select
-                  value={formData.attendance}
-                  onValueChange={(value) => setFormData({ ...formData, attendance: value })}
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select your response" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="yes">Yes, I'll be there!</SelectItem>
-                    <SelectItem value="no">Sorry, can't make it</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-
             <div className="space-y-2">
-              <Label htmlFor="guests">Number of Guests (including yourself)</Label>
-              <Select value={formData.guests} onValueChange={(value) => setFormData({ ...formData, guests: value })}>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select number of guests" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="1">1 Guest</SelectItem>
-                  <SelectItem value="2">2 Guests</SelectItem>
-                  <SelectItem value="3">3 Guests</SelectItem>
-                  <SelectItem value="4">4 Guests</SelectItem>
-                  <SelectItem value="5+">5+ Guests</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="message">Special Message (Optional)</Label>
-              <Textarea
-                id="message"
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                placeholder="Share your wishes for the couple..."
-                rows={3}
+              <Label htmlFor="name">Full Name *</Label>
+              <Input
+                id="name"
+                value={formData.fullname}
+                onChange={(e) =>
+                  setFormData({ ...formData, fullname: e.target.value })
+                }
+                required
               />
             </div>
 
-            <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
-              Send RSVP
+            <div className="space-y-2">
+              <Label htmlFor="message">Special Message</Label>
+              <Textarea
+                id="message"
+                value={formData.message}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
+                placeholder="Share your wishes for us 💌..."
+                rows={9}
+                required
+              />
+            </div>
+
+            <Button
+              type="submit"
+              className="w-full bg-primary hover:bg-primary/90 cursor-pointer"
+              disabled={isLoading}
+            >
+              Send Message
             </Button>
           </form>
 
@@ -132,5 +113,5 @@ export function RSVPForm() {
         </CardContent>
       </Card>
     </div>
-  )
+  );
 }

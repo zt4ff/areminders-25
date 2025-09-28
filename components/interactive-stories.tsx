@@ -79,7 +79,7 @@ Blessing’s answer came with a radiant smile, happy tears, and a resounding “
   {
     id: 4,
     title: "Looking Ahead",
-    image: "/pictures/couple-portrait-in-elegant-formal-wear.jpg",
+    image: "/pictures/05.jpeg",
     content: `Now, we stand on the threshold of a new chapter — marriage. With grateful hearts, we are excited to build a home filled with love, laughter, and purpose.
 We are endlessly thankful for our families and friends who have walked alongside us — for the prayers, encouragement, and love that surround us. Our wedding is not just about the two of us, but about the beautiful community of love that has shaped us.
 Here’s to forever — hand in hand, heart to heart. 💕
