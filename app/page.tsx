@@ -84,7 +84,16 @@ export default function WeddingWebsite() {
           <h2 className="text-3xl md:text-4xl font-serif text-primary mb-8">
             With Gratitude to Our Parents
           </h2>
-          <CountdownTimer />
+          {/* <CountdownTimer /> */}
+          <div>
+            <p className="text-2xl md:text-4xl lg:text-5xl font-serif text-primary mb-6 text-balance">
+              Mr. & Mrs. Umoru
+              <span className="block text-accent font-sans text-2xl md:text-3xl my-4">
+                &
+              </span>
+              Late Pa. & Late Mrs. Oladeji
+            </p>
+          </div>
         </div>
       </section>
 
@@ -284,6 +293,22 @@ export default function WeddingWebsite() {
                 </div>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Extra Details */}
+      <section id="love-notes" className="py-24 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="w-full flex justify-center items-center gap-4">
+            <Button className="cursor-pointer" size="lg">
+              View Our Bride and Grooms Men
+            </Button>
+            <Link href="/vendors">
+              <Button className="cursor-pointer" size="lg">
+                View Our Vendors
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
