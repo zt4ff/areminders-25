@@ -9,50 +9,10 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { useState } from "react";
-
-interface TeamMember {
-  fullName: string;
-  nickname: string;
-  dob: string;
-  occupation: string;
-  favoriteColor: string;
-  instagram: string;
-  photo: string;
-}
+import { TeamMember, teamMembers } from "./teamMember";
 
 export default function TrainPage() {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
-
-  const teamMembers: TeamMember[] = [
-    {
-      fullName: "Sarah Johnson",
-      nickname: "Sassy",
-      dob: "1995-03-15",
-      occupation: "Digital Marketing Specialist",
-      favoriteColor: "#FF69B4", // Hot Pink
-      instagram: "@sassysarah",
-      photo: "/pictures/01.jpeg", // Replace with actual photo paths
-    },
-    {
-      fullName: "Michael Chen",
-      nickname: "Mike",
-      dob: "1993-08-22",
-      occupation: "Software Engineer",
-      favoriteColor: "#4169E1", // Royal Blue
-      instagram: "@miketech",
-      photo: "/pictures/02.jpeg",
-    },
-    {
-      fullName: "Olivia Williams",
-      nickname: "Liv",
-      dob: "1994-11-30",
-      occupation: "Fashion Designer",
-      favoriteColor: "#9370DB", // Medium Purple
-      instagram: "@livdesigns",
-      photo: "/pictures/03.jpeg",
-    },
-    // Add more team members as needed
-  ];
 
   return (
     <div className="min-h-screen bg-background">

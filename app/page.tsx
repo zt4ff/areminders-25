@@ -301,9 +301,11 @@ export default function WeddingWebsite() {
       <section id="love-notes" className="py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="w-full flex justify-center items-center gap-4">
-            <Button className="cursor-pointer" size="lg">
-              View Our Bride and Grooms Men
-            </Button>
+            <Link href="/train">
+              <Button className="cursor-pointer" size="lg">
+                View Our Bride and Grooms Men
+              </Button>
+            </Link>
             <Link href="/vendors">
               <Button className="cursor-pointer" size="lg">
                 View Our Vendors

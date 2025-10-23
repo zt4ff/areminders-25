@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
 
 const galleryImages = [
+  // preweding
   {
     src: "/pictures/02.jpeg",
     alt: "Pre wedding photo 1",
@@ -50,6 +51,82 @@ const galleryImages = [
     src: "/pictures/01.jpeg",
     alt: "Pre wedding photo 10",
     category: "prewedding",
+  },
+  // photoshoot
+  {
+    src: "/photoshoot/0.jpg",
+    alt: "Photoshoot photo 0",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/1.jpg",
+    alt: "Photoshoot photo 1",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/2.jpg",
+    alt: "Photoshoot photo 2",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/3.jpg",
+    alt: "Photoshoot photo 3",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/4.png",
+    alt: "Photoshoot photo 4",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/5.png",
+    alt: "Photoshoot photo 5",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/6.png",
+    alt: "Photoshoot photo 6",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/7.png",
+    alt: "Photoshoot photo 7",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/8.png",
+    alt: "Photoshoot photo 8",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/9.png",
+    alt: "Photoshoot photo 9",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/10.jpg",
+    alt: "Photoshoot photo 10",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/11.png",
+    alt: "Photoshoot photo 11",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/12.png",
+    alt: "Photoshoot photo 12",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/13.png",
+    alt: "Photoshoot photo 13",
+    category: "photoshoot",
+  },
+  {
+    src: "/photoshoot/14.png",
+    alt: "Photoshoot photo 14",
+    category: "photoshoot",
   },
 ];
 
