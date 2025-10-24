@@ -67,7 +67,7 @@ export default function TrainPage() {
         </div>
       </section>
 
-      {/* Photo Modal */}
+      {/* Modal */}
       <Dialog
         open={!!selectedMember}
         onOpenChange={() => setSelectedMember(null)}
@@ -78,7 +78,13 @@ export default function TrainPage() {
               {selectedMember?.fullName}
             </DialogTitle>
           </DialogHeader>
-          <div className="aspect-video w-full overflow-hidden rounded-lg">
+          <div
+            className="aspect-video w-full overflow-hidden rounded-lg"
+            style={{
+              border: `6px solid ${selectedMember?.favoriteColor ?? "#e5e7eb"}`,
+              boxSizing: "border-box",
+            }}
+          >
             <img
               src={selectedMember?.photo}
               alt={selectedMember?.fullName}
