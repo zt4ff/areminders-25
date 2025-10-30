@@ -16,7 +16,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Graphic Designer",
     favoriteColor: "#000000",
     instagram: "ministerbusayo_official",
-    photo: "https://drive.google.com/open?id=11ZsDjkMjoz6hXxzIUg_gR70_n_vu0JWr",
+    photo: "/people/fadahunsi.jpg",
   },
   {
     fullName: "Olayinka Deborah",
@@ -25,16 +25,16 @@ export const teamMembers: TeamMember[] = [
     occupation: "Employee",
     favoriteColor: "#FFC0CB",
     instagram: "Horlaryeenkhar",
-    photo: "https://drive.google.com/open?id=1WTNjTHfGdofR2ZTJnISC_EDpV_ooA_86",
+    photo: "/people/yinka.jpeg",
   },
   {
-    fullName: "Olamilekan Agbaje",
-    nickname: "Agbaje",
+    fullName: "Olamilekan Adewale Agbaje",
+    nickname: "Ola",
     dob: "20-Apr",
-    occupation: "Searching",
+    occupation: "Customer service",
     favoriteColor: "#0000FF",
-    instagram: "Agbaje Olamilekan",
-    photo: "https://drive.google.com/open?id=19bS90bZSfwT1OSvezn8hPGB7C-13tmAl",
+    instagram: "https://www.facebook.com/share/17Qb4zhpfK/",
+    photo: "/people/lekan.jpg",
   },
   {
     fullName: "Promise victory osai",
@@ -43,7 +43,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Makeup artist/ engineer",
     favoriteColor: "#000000",
     instagram: "IG : Barbieojere Snapchat: Barbieojere123",
-    photo: "https://drive.google.com/open?id=12QlMmnAyl6j0BW_m5P_ih5IW5S0jtQg_",
+    photo: "/people/promise.jpeg",
   },
   {
     fullName: "Ayomide Praise",
@@ -52,7 +52,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Nill",
     favoriteColor: "#800080",
     instagram: "@bigmama2716",
-    photo: "https://drive.google.com/open?id=1Yns5fB7N5zMZyNLiiX8VKrMIpLYU40yg",
+    photo: "/people/ayomide-esther.jpeg",
   },
   {
     fullName: "Alabi simbiat ovayorza",
@@ -61,7 +61,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Fashion designer",
     favoriteColor: "#FFFFFF",
     instagram: "@ alabi simbiat ovayorza",
-    photo: "https://drive.google.com/open?id=18lDPBJdbAnS4dOa4e3bTJRPfcBZxHqx3",
+    photo: "/people/alabi.jpeg",
   },
   {
     fullName: "Amos Isaac Olaoluwa",
@@ -70,7 +70,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Accountant",
     favoriteColor: "#B2BEB5",
     instagram: "real_ne00 (instagram)",
-    photo: "https://drive.google.com/open?id=1llOeYfFkLGCDavvdvIbr2YRTdnB94gYO",
+    photo: "/people/isaac.jpg",
   },
   {
     fullName: "Ngadi Favour .C.",
@@ -79,7 +79,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Sales manager",
     favoriteColor: "#000000",
     instagram: "NGADI FAVOUR CHIDINMA (Instagram)",
-    photo: "https://drive.google.com/open?id=13rm8yWCziXB3zvr3mQejQivzHbsepiAx",
+    photo: "/people/favour.jpeg",
   },
   {
     fullName: "Akintola Omowunmi Olaitan",
@@ -88,7 +88,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Designer",
     favoriteColor: "#FFFFFF",
     instagram: "Tt @mhizakint. Ig @mhizakint_",
-    photo: "https://drive.google.com/open?id=11KoPYZi0UnidazlrNDlsZArhYPZpQJvt",
+    photo: "/people/omowunmi.jpeg",
   },
   {
     fullName: "Miracle Abiodun",
@@ -97,7 +97,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Fashion Designer/ Health Nutritionist.",
     favoriteColor: "#FFFFFF",
     instagram: "Instagram: @mir_ay113, Twitter: @Miray1485149",
-    photo: "https://drive.google.com/open?id=11Fito5kxqrpNItXVlbtBglsgAe903SKA",
+    photo: "/people/miracle.jpg",
   },
   {
     fullName: "Babalola Ayomide Olamide",
@@ -106,7 +106,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Corper",
     favoriteColor: "#D3D3D3",
     instagram: "@beaut_3080",
-    photo: "https://drive.google.com/open?id=1QE-vbVuB9YpuNjbSsAL3uA5h4QUT0v2R",
+    photo: "/people/ayomide-babalola.jpeg",
   },
   {
     fullName: "Oluwafemi Omolounnu",
@@ -115,7 +115,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Software Engineer",
     favoriteColor: "#0000FF",
     instagram: "the_priestly_techbro",
-    photo: "https://drive.google.com/open?id=11X51yt2GToTQCi1D3I5Po9e3nImAjZtN",
+    photo: "/people/omolounnu.jpg.jpg",
   },
   {
     fullName: "Jimoh Aramide",
@@ -124,7 +124,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Hair stylist",
     favoriteColor: "#0000FF,#000000",
     instagram: "Mide_luxe_braids",
-    photo: "https://drive.google.com/open?id=1cHcRlM31Xtt_flHwKF57jnBmJ4tAkiJx",
+    photo: "/people/aramide.jpeg",
   },
   {
     fullName: "Ola Oyinkonsola",
@@ -133,16 +133,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Makeup artist",
     favoriteColor: "#800080",
     instagram: "@Honeydrop058",
-    photo: "https://drive.google.com/open?id=1EIO46wkHXOwiG6HPDMbGeU8bOqDir_Ya",
-  },
-  {
-    fullName: "Olamilekan Adewale Agbaje",
-    nickname: "Ola",
-    dob: "20-Apr-95",
-    occupation: "Customer service",
-    favoriteColor: "#0000FF",
-    instagram: "https://www.facebook.com/share/17Qb4zhpfK/",
-    photo: "https://drive.google.com/open?id=1r2ViEs8oCV2SJZQ1rJE8fSN-U8hW2RJI",
+    photo: "/people/ola.jpeg",
   },
   {
     fullName: "Akintola Omowunmi",
@@ -151,7 +142,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Fashion designer",
     favoriteColor: "#FFFFFF",
     instagram: "Mhiz_akint",
-    photo: "https://drive.google.com/open?id=1IpABiwagxMzhwH1uTtwBHYqyi4VoObvG",
+    photo: "/people/wunmi.jpeg",
   },
   {
     fullName: "Falade Johnson Daramola",
@@ -160,7 +151,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Fashion Designer",
     favoriteColor: "#87CEEB",
     instagram: "Jay Johnson Outfits",
-    photo: "https://drive.google.com/open?id=1Y_kpkrUOrWPhptKSiTwaM7-S32d7nJ8A",
+    photo: "/people/lekan.jpg",
   },
   {
     fullName: "Akintola Oluwatosin",
@@ -169,7 +160,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Engineer",
     favoriteColor: "#B2BEB5,#808080",
     instagram: "Tospet_akint",
-    photo: "https://drive.google.com/open?id=1uDgPawwlb4jF_kRVZ5q9EbNwmAogyvcq",
+    photo: "/people/lekan.jpg",
   },
   {
     fullName: "Oluwasegun Kayode",
@@ -178,7 +169,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Software Engineer",
     favoriteColor: "#000000",
     instagram: "olaolu_kayode",
-    photo: "https://drive.google.com/open?id=1iUpA6NJrHoeic_tjhwzBE5a_ttHnXFh_",
+    photo: "/people/lekan.jpg",
   },
   {
     fullName: "Fariogun Folakemi",
@@ -187,7 +178,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "French tutor",
     favoriteColor: "#800080",
     instagram: "fola_greatmuse",
-    photo: "https://drive.google.com/open?id=1xKaGfN6K3jOmZopkVHTjcLflPdreUzK8",
+    photo: "/people/lekan.jpg",
   },
   {
     fullName: "Oluwadahunsi Adeyinka",
@@ -196,7 +187,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Consultant",
     favoriteColor: "#D3D3D3",
     instagram: "@a_dahunsi",
-    photo: "https://drive.google.com/open?id=1V_naSebjOPub1CwDCN-EPCzQEUCNyqpO",
+    photo: "/people/lekan.jpg",
   },
   {
     fullName: "Fawunmi temitope oladipupo",
@@ -205,7 +196,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Businessman",
     favoriteColor: "#000000",
     instagram: "Topteezee55",
-    photo: "https://drive.google.com/open?id=1JKgannJ3ApJz-mzXnfS5tr4_CI0Q--IP",
+    photo: "/people/lekan.jpg",
   },
   {
     fullName: "Oyelakin Deborah Ayonimofe",
@@ -214,7 +205,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Employee & Clothing Vendor (Unisex)",
     favoriteColor: "#0000FF,#FFC0CB",
     instagram: "@babydebo35",
-    photo: "https://drive.google.com/open?id=1jhFZLdUaXCxT-Y-b8yEFUqLK7Kmi8lTb",
+    photo: "/people/lekan.jpg",
   },
   {
     fullName: "Ibrahim Mary omotolani",
@@ -223,6 +214,6 @@ export const teamMembers: TeamMember[] = [
     occupation: "Fashion designer",
     favoriteColor: "#7B3F00",
     instagram: "Oluwayemisi",
-    photo: "https://drive.google.com/open?id=1Udj_W_TT9tcHW0U8SeaKpWB3XZg9IRi6",
+    photo: "/people/lekan.jpg",
   },
 ];

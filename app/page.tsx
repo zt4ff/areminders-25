@@ -200,7 +200,7 @@ export default function WeddingWebsite() {
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div className="flex items-center justify-center gap-2">
                     <Clock className="h-4 w-4" />
-                    <span>Sat, 25th October, 2025 - 2:00 PM</span>
+                    <span>Sat, 1st November, 2025 - 7:00 PM</span>
                   </div>
                   <div className="flex items-start justify-center gap-2">
                     <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
@@ -300,7 +300,7 @@ export default function WeddingWebsite() {
       {/* Extra Details */}
       <section id="love-notes" className="py-24 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="w-full flex justify-center items-center gap-4">
+          <div className="w-full flex justify-center items-center gap-4 max-md:flex-col">
             <Link href="/train">
               <Button className="cursor-pointer" size="lg">
                 View Our Bride and Grooms Men
