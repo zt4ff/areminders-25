@@ -151,7 +151,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Fashion Designer",
     favoriteColor: "#87CEEB",
     instagram: "Jay Johnson Outfits",
-    photo: "/people/lekan.jpg",
+    photo: "/people/falade.jpg",
   },
   {
     fullName: "Akintola Oluwatosin",
@@ -160,7 +160,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Engineer",
     favoriteColor: "#B2BEB5,#808080",
     instagram: "Tospet_akint",
-    photo: "/people/lekan.jpg",
+    photo: "/", // TODO
   },
   {
     fullName: "Oluwasegun Kayode",
@@ -169,7 +169,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Software Engineer",
     favoriteColor: "#000000",
     instagram: "olaolu_kayode",
-    photo: "/people/lekan.jpg",
+    photo: "/people/kayode.jpg",
   },
   {
     fullName: "Fariogun Folakemi",
@@ -178,7 +178,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "French tutor",
     favoriteColor: "#800080",
     instagram: "fola_greatmuse",
-    photo: "/people/lekan.jpg",
+    photo: "/people/folakemi.JPG",
   },
   {
     fullName: "Oluwadahunsi Adeyinka",
@@ -187,16 +187,16 @@ export const teamMembers: TeamMember[] = [
     occupation: "Consultant",
     favoriteColor: "#D3D3D3",
     instagram: "@a_dahunsi",
-    photo: "/people/lekan.jpg",
+    photo: "/people/adeyinka.jpg",
   },
   {
     fullName: "Fawunmi temitope oladipupo",
     nickname: "Topteezee",
-    dob: "6/25/1995",
+    dob: "6/25",
     occupation: "Businessman",
     favoriteColor: "#000000",
     instagram: "Topteezee55",
-    photo: "/people/lekan.jpg",
+    photo: "/people/temitope.jpg",
   },
   {
     fullName: "Oyelakin Deborah Ayonimofe",
@@ -205,7 +205,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Employee & Clothing Vendor (Unisex)",
     favoriteColor: "#0000FF,#FFC0CB",
     instagram: "@babydebo35",
-    photo: "/people/lekan.jpg",
+    photo: "/people/deborah.jpg",
   },
   {
     fullName: "Ibrahim Mary omotolani",
@@ -214,6 +214,6 @@ export const teamMembers: TeamMember[] = [
     occupation: "Fashion designer",
     favoriteColor: "#7B3F00",
     instagram: "Oluwayemisi",
-    photo: "/people/lekan.jpg",
+    photo: "/people/blessing.jpg",
   },
 ];
