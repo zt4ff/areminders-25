@@ -71,34 +71,28 @@ export default function TrainPage() {
         open={!!selectedMember}
         onOpenChange={() => setSelectedMember(null)}
       >
-        <DialogContent className="max-w-[90vw] sm:max-w-3xl">
-          <DialogHeader>
-            <DialogTitle className="text-center font-serif text-xl sm:text-2xl text-primary mb-4">
-              {selectedMember?.fullName}
-            </DialogTitle>
-          </DialogHeader>
-          <div
-            className="aspect-video w-full overflow-hidden rounded-lg"
-            style={{
-              border: `4px solid ${selectedMember?.favoriteColor ?? "#e5e7eb"}`,
-            }}
-          >
+        <DialogContent className="max-w-[95vw] sm:max-w-5xl p-0 overflow-hidden">
+          <DialogHeader className="hidden" />
+          <div className="relative w-full h-[80vh] sm:h-[90vh]">
             <img
               src={selectedMember?.photo}
               alt={selectedMember?.fullName}
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover"
+              style={{
+                border: `6px solid ${
+                  selectedMember?.favoriteColor ?? "#e5e7eb"
+                }`,
+                boxSizing: "border-box",
+              }}
             />
-          </div>
-          <div className="text-center space-y-2 mt-4">
-            <p className="text-base sm:text-lg text-primary">
-              "{selectedMember?.nickname}"
-            </p>
-            <p className="text-sm sm:text-base text-muted-foreground">
-              {selectedMember?.occupation}
-            </p>
-            <div className="flex items-center justify-center gap-1 sm:gap-2 text-xs sm:text-sm">
-              <Instagram className="h-4 w-4" />
-              <span>{selectedMember?.instagram}</span>
+            <div className="absolute bottom-0 w-full bg-black/60 text-white py-4 text-center space-y-1">
+              <p className="text-lg font-serif">{selectedMember?.fullName}</p>
+              <p className="text-sm italic">"{selectedMember?.nickname}"</p>
+              <p className="text-sm">{selectedMember?.occupation}</p>
+              <div className="flex items-center justify-center gap-2 text-sm">
+                <Instagram className="h-4 w-4" />
+                <span>{selectedMember?.instagram}</span>
+              </div>
             </div>
           </div>
         </DialogContent>

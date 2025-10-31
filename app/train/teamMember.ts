@@ -115,7 +115,7 @@ export const teamMembers: TeamMember[] = [
     occupation: "Software Engineer",
     favoriteColor: "#0000FF",
     instagram: "the_priestly_techbro",
-    photo: "/people/omolounnu.jpg.jpg",
+    photo: "/people/omolounnu.jpg",
   },
   {
     fullName: "Jimoh Aramide",

@@ -78,25 +78,6 @@ export default function WeddingWebsite() {
         </div>
       </section>
 
-      {/* Gratitude Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif text-primary mb-8">
-            With Gratitude to Our Parents
-          </h2>
-          {/* <CountdownTimer /> */}
-          <div>
-            <p className="text-2xl md:text-4xl lg:text-5xl font-serif text-primary mb-6 text-balance">
-              Mr. & Mrs. Umoru
-              <span className="block text-accent font-sans text-2xl md:text-3xl my-4">
-                &
-              </span>
-              Late Pa. & Late Mrs. Oladeji
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Our Story Section */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="max-w-4xl mx-auto">
@@ -370,6 +351,29 @@ export default function WeddingWebsite() {
             Our Journey in Pictures
           </h2>
           <WeddingGallery />
+        </div>
+      </section>
+
+      {/* Gratitude Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-serif text-primary mb-8">
+            With Gratitude to Our Parents
+          </h2>
+          {/* <CountdownTimer /> */}
+          <div>
+            <p className="text-xl md:text-4xl lg:text-5xl font-serif text-primary mb-6 text-balance">
+              Mr. & Mrs. Umoru
+              <span className="block text-accent font-sans text-2xl md:text-3xl my-4">
+                &
+              </span>
+              Late Pa. & Late Mrs. Oladeji
+              <span className="block text-accent font-sans text-2xl md:text-3xl my-4">
+                represented by
+              </span>
+              Imam Abdullahi Olohungbebe & Mrs Mary Oladeji
+            </p>
+          </div>
         </div>
       </section>
 
