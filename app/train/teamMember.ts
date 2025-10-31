@@ -10,6 +10,24 @@ export interface TeamMember {
 
 export const teamMembers: TeamMember[] = [
   {
+    fullName: "Ibrahim Mary Omotolani",
+    nickname: "Lannie",
+    dob: "7-Sep",
+    occupation: "Fashion designer",
+    favoriteColor: "#7B3F00",
+    instagram: "Oluwayemisi",
+    photo: "/people/blessing.jpg",
+  },
+  {
+    fullName: "Oluwadahunsi Adeyinka",
+    nickname: "Oluwadahunsi",
+    dob: "22-Oct",
+    occupation: "Consultant",
+    favoriteColor: "#D3D3D3",
+    instagram: "@a_dahunsi",
+    photo: "/people/adeyinka.jpg",
+  },
+  {
     fullName: "Fadahunsi Oluwabusayo",
     nickname: "Minister B",
     dob: "Nov-25",
@@ -48,7 +66,7 @@ export const teamMembers: TeamMember[] = [
   {
     fullName: "Ayomide Praise",
     nickname: "Mama",
-    dob: "4/5/2025",
+    dob: "4-May",
     occupation: "Nill",
     favoriteColor: "#800080",
     instagram: "@bigmama2716",
@@ -57,7 +75,7 @@ export const teamMembers: TeamMember[] = [
   {
     fullName: "Alabi simbiat ovayorza",
     nickname: "Ovy",
-    dob: "8-Oct-25",
+    dob: "8-Oct",
     occupation: "Fashion designer",
     favoriteColor: "#FFFFFF",
     instagram: "@ alabi simbiat ovayorza",
@@ -93,7 +111,7 @@ export const teamMembers: TeamMember[] = [
   {
     fullName: "Miracle Abiodun",
     nickname: "Miraywonder",
-    dob: "4/25/2025",
+    dob: "4-25",
     occupation: "Fashion Designer/ Health Nutritionist.",
     favoriteColor: "#FFFFFF",
     instagram: "Instagram: @mir_ay113, Twitter: @Miray1485149",
@@ -102,7 +120,7 @@ export const teamMembers: TeamMember[] = [
   {
     fullName: "Babalola Ayomide Olamide",
     nickname: "Ayo",
-    dob: "5/12/2025",
+    dob: "5th December",
     occupation: "Corper",
     favoriteColor: "#D3D3D3",
     instagram: "@beaut_3080",
@@ -129,7 +147,7 @@ export const teamMembers: TeamMember[] = [
   {
     fullName: "Ola Oyinkonsola",
     nickname: "Honeydrop",
-    dob: "13-Jul-04",
+    dob: "13-Jul",
     occupation: "Makeup artist",
     favoriteColor: "#800080",
     instagram: "@Honeydrop058",
@@ -180,15 +198,7 @@ export const teamMembers: TeamMember[] = [
     instagram: "fola_greatmuse",
     photo: "/people/folakemi.JPG",
   },
-  {
-    fullName: "Oluwadahunsi Adeyinka",
-    nickname: "Oluwadahunsi",
-    dob: "22-Oct",
-    occupation: "Consultant",
-    favoriteColor: "#D3D3D3",
-    instagram: "@a_dahunsi",
-    photo: "/people/adeyinka.jpg",
-  },
+
   {
     fullName: "Fawunmi temitope oladipupo",
     nickname: "Topteezee",
@@ -198,22 +208,13 @@ export const teamMembers: TeamMember[] = [
     instagram: "Topteezee55",
     photo: "/people/temitope.jpg",
   },
-  {
-    fullName: "Oyelakin Deborah Ayonimofe",
-    nickname: "Babydebo",
-    dob: "May 16th 2003",
-    occupation: "Employee & Clothing Vendor (Unisex)",
-    favoriteColor: "#0000FF,#FFC0CB",
-    instagram: "@babydebo35",
-    photo: "/people/deborah.jpg",
-  },
-  {
-    fullName: "Ibrahim Mary omotolani",
-    nickname: "Lannie",
-    dob: "7-Sep",
-    occupation: "Fashion designer",
-    favoriteColor: "#7B3F00",
-    instagram: "Oluwayemisi",
-    photo: "/people/blessing.jpg",
-  },
+  // {
+  //   fullName: "Oyelakin Deborah Ayonimofe",
+  //   nickname: "Babydebo",
+  //   dob: "May 16th 2003",
+  //   occupation: "Employee & Clothing Vendor (Unisex)",
+  //   favoriteColor: "#0000FF,#FFC0CB",
+  //   instagram: "@babydebo35",
+  //   photo: "/people/deborah.jpg",
+  // },
 ];
