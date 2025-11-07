@@ -46,6 +46,15 @@ export const teamMembers: TeamMember[] = [
     photo: "/people/yinka.jpeg",
   },
   {
+    fullName: "Jadesola Ilori",
+    nickname: "",
+    dob: "",
+    occupation: "CX",
+    favoriteColor: "#FFC0CB",
+    instagram: "Jadesola Ilori",
+    photo: "/people/ireti.jpeg",
+  },
+  {
     fullName: "Olamilekan Adewale Agbaje",
     nickname: "Ola",
     dob: "20-Apr",

@@ -234,7 +234,7 @@ export default function WeddingWebsite() {
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div className="flex items-center justify-center gap-2">
                     <Clock className="h-4 w-4" />
-                    <span>Sat, 8th October, 2025 - 11:00 AM</span>
+                    <span>Sat, 8th November, 2025 - 11:00 AM</span>
                   </div>
                   <div className="flex items-start justify-center gap-2">
                     <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
@@ -260,7 +260,7 @@ export default function WeddingWebsite() {
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <div className="flex items-center justify-center gap-2">
                     <Clock className="h-4 w-4" />
-                    <span>Sat, 8th October, 2025 - 1:30 PM</span>
+                    <span>Sat, 8th November, 2025 - 1:30 PM</span>
                   </div>
                   <div className="flex items-start justify-center gap-2">
                     <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
